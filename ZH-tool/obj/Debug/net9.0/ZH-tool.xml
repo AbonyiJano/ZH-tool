@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZH-tool</name>
+    </assembly>
+    <members>
+        <member name="M:ZH_tool.Controllers.FeladatController.CreateFeladat(ZH_tool.DTOs.FeladatDto)">
+            <summary>
+            Új feladat mentése az adatbázisba.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.FeladatController.GetFeladatById(System.Int32)">
+            <summary>
+            Egy feladat lekérdezése ID alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.FeladatController.GetAllFeladat">
+            <summary>
+            Összes feladat lekérdezése.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.FeladatController.UpdateFeladat(System.Int32,ZH_tool.DTOs.FeladatDto)">
+            <summary>
+            Egy feladat adatainak frissítése ID alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.FeladatController.DeleteFeladat(System.Int32)">
+            <summary>
+            Egy feladat törlése ID alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.FeladatController.GetFeladatokByGeneraltZhId(System.Int32)">
+            <summary>
+            Feladatok lekérése Zh alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.HallgatoController.CreateHallgato(ZH_tool.DTOs.HallgatoDto)">
+            <summary>
+            Új hallgató regisztrálása (beküldés a Neptunkóddal és névvel).
+            </summary>
+            <param name="hallgatoDto">A hallgató adatai (Neptunkod, Nev).</param>
+            <returns>A regisztrált hallgató adatait tartalmazó DTO.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.HallgatoController.GetHallgatoByNeptun(System.String)">
+            <summary>
+            Egy hallgató adatainak lekérdezése Neptunkód alapján.
+            </summary>
+            <param name="neptunkod">A hallgató egyedi Neptunkódja.</param>
+            <returns>A hallgató adatait tartalmazó DTO.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.MegoldasController.SubmitMegoldas(ZH_tool.DTOs.MegoldasInputDto)">
+            <summary>
+            Egy hallgató beküldi egy generált ZH megoldását.
+            </summary>
+            <param name="megoldasDto">A beküldött megoldás adatai (Neptunkód, GeneraltZhId, BekuldottMegoldas).</param>
+            <returns>A mentett megoldás adatait tartalmazó DTO.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.MegoldasController.GetMegoldasById(System.Int32)">
+            <summary>
+            Egy adott megoldás lekérdezése ID alapján. (A CreatedAtAction célja)
+            </summary>
+            <param name="id">A megoldás egyedi azonosítója.</param>
+            <returns>A megoldás adatait tartalmazó DTO.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.GetAllZhk">
+            <summary>
+            Lekérdezi az összes ZH-t az adatbázisból.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.GetZh(System.Int32)">
+            <summary>
+            Lekérdez egy ZH-t azonosító alapján.
+            </summary>
+            <param name="id">A ZH azonosítója (Id).</param>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.CreateZh(ZH_tool.DTOs.CreateZhDto)">
+            <summary>
+            Új ZH-t vesz fel az adatbázisba.
+            </summary>
+            <param name="zh">A felvenni kívánt ZH adatai.</param>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.UpdateZh(System.Int32,ZH_tool.DTOs.CreateZhDto)">
+            <summary>
+            Frissíti egy létező ZH adatait.
+            </summary>
+            <param name="id">A frissítendő ZH azonosítója (Id).</param>
+            <param name="zhDto">A ZH új adatai.</param>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.DeleteZh(System.Int32)">
+            <summary>
+            Töröl egy ZH-t azonosító alapján.
+            </summary>
+            <param name="id">A törlendő ZH azonosítója (Id).</param>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.GenerateZh(System.Int32)">
+            <summary>
+            Generál egy feladatsort egy adott ZH paraméterei alapján (Gemini hívás).
+            </summary>
+            <param name="parentZhId">Annak a ZH-nak az azonosítója, amely alapján generálni kell.</param>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.GetGeneratedZh(System.Int32)">
+            <summary>
+            Lekérdezi egy korábban generált ZH adatait azonosító alapján.
+            </summary>
+            <param name="id">A generált ZH azonosítója.</param>
+            <returns>A generált ZH adatait tartalmazó objektum, benne a generált JSON-nal.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.ZhController.DeleteGeneratedZh(System.Int32)">
+            <summary>
+            Töröl egy generált ZH-t azonosító alapján.
+            </summary>
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.GeneratedZhTable">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.GeneratedZhTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.GeneratedZhTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.GeneratedZhTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.HallgatoMegoldas">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.HallgatoMegoldas.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.HallgatoMegoldas.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.HallgatoMegoldas.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.FeladatTabla">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.FeladatTabla_v2">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla_v2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla_v2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.FeladatTabla_v2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ZH_tool.Data.Migrations.MegoldasTabla">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.MegoldasTabla.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.MegoldasTabla.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Data.Migrations.MegoldasTabla.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ZH_tool.Repository.GeneraltZhRepository.GetAllAsync">
+            <summary>
+            Lekérdezi az összes generált ZH-t az adatbázisból.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.GeneraltZhRepository.GetByIdAsync(System.Int32)">
+            <summary>
+            Lekérdez egy generált ZH-t azonosító alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.GeneraltZhRepository.AddAsync(ZH_tool.Models.GeneraltZh)">
+            <summary>
+            Elment egy új generált ZH entitást az adatbázisba.
+            </summary>
+            <param name="entity">A mentendő GeneraltZh entitás.</param>
+        </member>
+        <member name="M:ZH_tool.Repository.GeneraltZhRepository.UpdateAsync(ZH_tool.Models.GeneraltZh)">
+            <summary>
+            Frissít egy létező generált ZH entitást.
+            </summary>
+            <param name="entity">A frissített GeneraltZh entitás.</param>
+        </member>
+        <member name="M:ZH_tool.Repository.GeneraltZhRepository.DeleteAsync(System.Int32)">
+            <summary>
+            Töröl egy generált ZH-t azonosító alapján.
+            </summary>
+            <param name="id">A törlendő entitás azonosítója.</param>
+        </member>
+        <member name="M:ZH_tool.Repository.HallgatoRepository.AddAsync(ZH_tool.Models.Hallgato)">
+            <summary>
+            Új hallgató mentése az adatbázisba.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.HallgatoRepository.ZH_tool#Repository#IRepository{ZH_tool#Models#Hallgato}#DeleteAsync(System.Int32)">
+            <summary>
+            Hallgató törlése Neptunkód alapján (itt a 'Neptunkod' az ID).
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.HallgatoRepository.GetAllAsync">
+            <summary>
+            Összes hallgató lekérdezése.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.HallgatoRepository.ZH_tool#Repository#IRepository{ZH_tool#Models#Hallgato}#GetByIdAsync(System.Int32)">
+            <summary>
+            Hallgató lekérdezése Neptunkód alapján.
+            </summary>
+            
+        </member>
+        <member name="M:ZH_tool.Repository.HallgatoRepository.UpdateAsync(ZH_tool.Models.Hallgato)">
+            <summary>
+            Hallgató adatainak frissítése.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.MegoldasRepository.AddAsync(ZH_tool.Models.Megoldas)">
+            <summary>
+            Új megoldás mentése az adatbázisba.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.MegoldasRepository.DeleteAsync(System.Int32)">
+            <summary>
+            Megoldás törlése ID alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.MegoldasRepository.GetAllAsync">
+            <summary>
+            Összes megoldás lekérdezése a kapcsolódó adatokkal.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.MegoldasRepository.GetByIdAsync(System.Int32)">
+            <summary>
+            Megoldás lekérdezése ID alapján a kapcsolódó adatokkal.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Repository.MegoldasRepository.UpdateAsync(ZH_tool.Models.Megoldas)">
+            <summary>
+            Megoldás adatainak frissítése.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Services.HallgatoService.GetHallgatoByNeptunAsync(System.String)">
+            <summary>
+            Hallgató lekérdezése Neptunkód alapján. String kulcsot használ.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Services.HallgatoService.CreateHallgatoAsync(ZH_tool.Models.Hallgato)">
+            <summary>
+            Új hallgató létrehozása. Először ellenőrizzük, létezik-e már az adott Neptunkód.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Services.MegoldasService.SubmitMegoldasAsync(ZH_tool.Models.Megoldas)">
+            <summary>
+            Megoldás beküldése. Ellenőrzi, hogy a hivatkozott hallgató és generált ZH léteznek-e.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Services.MegoldasService.GetMegoldasByIdAsync(System.Int32)">
+            <summary>
+            Megoldás lekérdezése ID alapján.
+            </summary>
+        </member>
+        <member name="M:ZH_tool.Services.MegoldasService.GradeMegoldasAsync(ZH_tool.Models.Megoldas)">
+            <summary>
+            LLM segítségével pontozza a beküldött megoldást, és menti az értékelést.
+            </summary>
+        </member>
+    </members>
+</doc>
