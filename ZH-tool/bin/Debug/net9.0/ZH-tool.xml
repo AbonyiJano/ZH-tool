@@ -98,6 +98,11 @@
             </summary>
             <param name="parentZhId">Annak a ZH-nak az azonosítója, amely alapján generálni kell.</param>
         </member>
+        <member name="M:ZH_tool.Controllers.ZhController.GetAllGeneratedZhk">
+            <summary>
+            Lekérdezi az összes generált ZH-t.
+            </summary>
+        </member>
         <member name="M:ZH_tool.Controllers.ZhController.GetGeneratedZh(System.Int32)">
             <summary>
             Lekérdezi egy korábban generált ZH adatait azonosító alapján.

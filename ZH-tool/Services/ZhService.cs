@@ -158,6 +158,10 @@ Generálj {parentZh.ProgramozasiNyelv} darab új ZH-feladatot JSON-tömb formáj
 
 
         }
+        public async Task<IEnumerable<GeneraltZh>> ListAllGeneratedZhkAsync()
+        {
+            return await _generaltZhRepository.GetAllAsync();
+        }
         public async Task<GeneraltZh?> GetGeneratedZhByIdAsync(int id)
         {
             return await _generaltZhRepository.GetByIdAsync(id);

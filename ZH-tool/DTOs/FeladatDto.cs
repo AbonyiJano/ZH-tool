@@ -10,11 +10,11 @@ namespace ZH_tool.DTOs
         public int GeneraltZhId { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [StringLength(200)]
         public string FeladatCime { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(50)]
+        [StringLength(250)]
         public string Temakor { get; set; } = string.Empty;
 
         [Required]
@@ -24,7 +24,6 @@ namespace ZH_tool.DTOs
         public List<string> Kompetenciak { get; set; } = new List<string>();
 
         [Required]
-        [StringLength(50)]
         public string Pontozas { get; set; } = string.Empty;
 
         public string MintaMegoldas { get; set; } = string.Empty;

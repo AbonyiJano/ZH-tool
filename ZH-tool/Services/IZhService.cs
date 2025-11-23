@@ -12,6 +12,7 @@ namespace ZH_tool.Services
         Task<bool> DeleteZhAsync(int id);
 
         Task<GeneraltZh?> GenerateZhContentAsync(int parentZhId);
+        Task<IEnumerable<GeneraltZh>> ListAllGeneratedZhkAsync();
         Task<GeneraltZh?> GetGeneratedZhByIdAsync(int id);
         Task<GeneraltZh?> UpdateGeneratedZhAsync(GeneraltZh zh);
         Task<bool> DeleteGeneratedZhAsync(int id);

@@ -9,15 +9,15 @@ using ZH_tool.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. PostgreSQL DbContext konfiguráció (EF Core)
+// 1. PostgreSQL DbContext konfigurÃ¡ciÃ³ (EF Core)
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    // Az UseNpgsql a Npgsql.EntityFrameworkCore.PostgreSQL csomagból származik
     options.UseNpgsql(connectionString));
 
 builder.Services.Configure<GeminiSettings>(
     builder.Configuration.GetSection(GeminiOptions.Gemini));
-// 2. Repository réteg regisztrációja (Dependency Injection)
+
+// 2. Repository rÃ©teg regisztrÃ¡ciÃ³ja
 builder.Services.AddScoped<IRepository<Zh>, ZhRepository>();
 builder.Services.AddScoped<IRepository<GeneraltZh>, GeneraltZhRepository>();
 builder.Services.AddScoped<IRepository<Hallgato>, HallgatoRepository>();
@@ -26,7 +26,7 @@ builder.Services.AddScoped<IRepository<Feladat>, FeladatRepository>();
 builder.Services.AddScoped<IFeladatRepository, FeladatRepository>();
 builder.Services.AddScoped<IRepository<Ertekeles>, ErtekelesRepository>();
 
-// 3. Service réteg regisztrációja (Dependency Injection)
+// 3. Service rÃ©teg regisztrÃ¡ciÃ³ja
 builder.Services.AddScoped<IZhService, ZhService>();
 builder.Services.AddScoped<IHallgatoService, HallgatoService>();
 builder.Services.AddScoped<IMegoldasService, MegoldasService>();
@@ -36,32 +36,40 @@ builder.Services.AddScoped<IErtekelesService, ErtekelesService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
-// Add services to the container.
 builder.Services.AddControllers();
 
-// 4. Swagger/OpenAPI támogatás hozzáadása
+// CORS Policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:5173")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
+// 4. Swagger/OpenAPI tÃ¡mogatÃ¡s
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    // Opcionális: Segíti a Swagger UI-t, hogy megjelenítse a Controller metódusok leírását
     var filePath = Path.Combine(AppContext.BaseDirectory, "ZH-tool.xml");
-    // Ahhoz, hogy ez mûködjön, be kell kapcsolni a "GenerateDocumentationFile"-t a .csproj fájlban:
-    // <PropertyGroup><GenerateDocumentationFile>true</GenerateDocumentationFile></PropertyGroup>
     c.IncludeXmlComments(filePath);
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-// 5. Swagger UI engedélyezése Fejlesztõi módban
+// 5. Swagger UI
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    // A Swagger UI itt érhetõ el: https://localhost:{port}/swagger
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowReactApp");
 
 app.UseAuthorization();
 

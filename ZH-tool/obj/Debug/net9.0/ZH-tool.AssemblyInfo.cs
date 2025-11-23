@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZH-tool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+552b479c82c7d7c8b5c5ee1b8e5ee0c136322585")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZH-tool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZH-tool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

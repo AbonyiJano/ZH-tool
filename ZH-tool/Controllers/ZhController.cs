@@ -156,7 +156,18 @@ namespace ZH_tool.Controllers
 
             // ... (Mapping és visszatérés, mint korábban) ...
             var responseDto = _mapper.Map<GeneraltZhResponseDto>(generatedEntity);
+
             return CreatedAtAction(nameof(GetGeneratedZh), new { id = responseDto.Id }, responseDto);
+        }
+        /// <summary>
+        /// Lekérdezi az összes generált ZH-t.
+        /// </summary>
+        [HttpGet("generated")]
+        [ProducesResponseType(typeof(IEnumerable<GeneraltZhResponseDto>), 200)]
+        public async Task<ActionResult<IEnumerable<GeneraltZhResponseDto>>> GetAllGeneratedZhk()
+        {
+            var generatedZhk = await _zhService.ListAllGeneratedZhkAsync();
+            return Ok(_mapper.Map<IEnumerable<GeneraltZhResponseDto>>(generatedZhk));
         }
         /// <summary>
         /// Lekérdezi egy korábban generált ZH adatait azonosító alapján.

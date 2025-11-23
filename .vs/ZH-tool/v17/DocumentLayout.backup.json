@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\abony\\Desktop\\ZH-tool\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|c:\\users\\abony\\desktop\\zh-tool\\zh-tool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|solutionrelative:zh-tool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|c:\\users\\abony\\desktop\\zh-tool\\zh-tool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|solutionrelative:zh-tool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|solutionrelative:zh-tool\\repository\\zhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|c:\\users\\abony\\desktop\\zh-tool\\zh-tool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|solutionrelative:zh-tool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|c:\\users\\abony\\desktop\\zh-tool\\zh-tool\\repository\\hallgatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8F53A84-9218-4260-A497-81352F07098A}|ZH-tool\\ZH-tool.csproj|solutionrelative:zh-tool\\repository\\hallgatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -194,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -206,33 +206,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Program.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Program.cs",
               "ToolTip": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Program.cs",
               "RelativeToolTip": "ZH-tool\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowCIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:58:27.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:58:27.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ErtekelesResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
-              "RelativeDocumentMoniker": "ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
-              "ToolTip": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
-              "RelativeToolTip": "ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:08:07.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ErtekelesService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\ErtekelesService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\ErtekelesService.cs",
@@ -240,12 +226,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\ErtekelesService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:12:33.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T10:12:33.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IErtekelesService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\IErtekelesService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\IErtekelesService.cs",
@@ -253,12 +238,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\IErtekelesService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:11:52.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T10:11:52.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FeladatController.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Controllers\\FeladatController.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Controllers\\FeladatController.cs",
@@ -266,12 +250,11 @@
               "RelativeToolTip": "ZH-tool\\Controllers\\FeladatController.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAAcwIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:41:52.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T15:41:52.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MegoldasController.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Controllers\\MegoldasController.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Controllers\\MegoldasController.cs",
@@ -279,12 +262,11 @@
               "RelativeToolTip": "ZH-tool\\Controllers\\MegoldasController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T00:02:33.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T00:02:33.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Ertekeles.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\Ertekeles.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\Ertekeles.cs",
@@ -292,12 +274,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\Ertekeles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:07:18.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T10:07:18.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MegoldasService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\MegoldasService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\MegoldasService.cs",
@@ -305,12 +286,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\MegoldasService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwC0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:54:48.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:54:48.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GeneraltZhRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\GeneraltZhRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\GeneraltZhRepository.cs",
@@ -318,12 +298,36 @@
               "RelativeToolTip": "ZH-tool\\Repository\\GeneraltZhRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T21:27:27.987Z",
+              "WhenOpened": "2025-11-18T21:27:27.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\appsettings.json",
+              "RelativeDocumentMoniker": "ZH-tool\\appsettings.json",
+              "ToolTip": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\appsettings.json",
+              "RelativeToolTip": "ZH-tool\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T18:11:36.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 9,
+              "Title": "ErtekelesResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
+              "RelativeDocumentMoniker": "ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
+              "ToolTip": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
+              "RelativeToolTip": "ZH-tool\\DTOs\\ErtekelesResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T10:08:07.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "GeneraltZh.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\GeneraltZh.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\GeneraltZh.cs",
@@ -331,12 +335,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\GeneraltZh.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T21:20:51.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T21:20:51.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Feladat.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\Feladat.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\Feladat.cs",
@@ -344,12 +347,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\Feladat.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T13:06:36.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T13:06:36.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "FeladatDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\FeladatDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\FeladatDto.cs",
@@ -357,12 +359,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\FeladatDto.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA5wB0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T13:09:19.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T13:09:19.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ErtekelesController.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Controllers\\ErtekelesController.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Controllers\\ErtekelesController.cs",
@@ -370,12 +371,11 @@
               "RelativeToolTip": "ZH-tool\\Controllers\\ErtekelesController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T19:03:15.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T19:03:15.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ErtekelesRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\ErtekelesRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\ErtekelesRepository.cs",
@@ -383,12 +383,11 @@
               "RelativeToolTip": "ZH-tool\\Repository\\ErtekelesRepository.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAawA4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:09:55.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T10:09:55.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "FeladatRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\FeladatRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\FeladatRepository.cs",
@@ -396,12 +395,11 @@
               "RelativeToolTip": "ZH-tool\\Repository\\FeladatRepository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowDIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:36:31.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T15:36:31.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ZhService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\ZhService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\ZhService.cs",
@@ -409,12 +407,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\ZhService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAcwBIAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:44:09.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:44:09.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IMegoldasService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\IMegoldasService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\IMegoldasService.cs",
@@ -422,12 +419,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\IMegoldasService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:49:51.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:49:51.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\IRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\IRepository.cs",
@@ -435,12 +431,11 @@
               "RelativeToolTip": "ZH-tool\\Repository\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:36:31.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:36:31.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MegoldasRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\MegoldasRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\MegoldasRepository.cs",
@@ -448,12 +443,11 @@
               "RelativeToolTip": "ZH-tool\\Repository\\MegoldasRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:42:02.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:42:02.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Hallgato.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\Hallgato.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\Hallgato.cs",
@@ -461,12 +455,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\Hallgato.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:23:44.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:23:44.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Megoldas.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\Megoldas.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\Megoldas.cs",
@@ -474,12 +467,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\Megoldas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:24:18.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:24:18.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "MegoldasResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\MegoldasResponseDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\MegoldasResponseDto.cs",
@@ -487,12 +479,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\MegoldasResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:30:52.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:30:52.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "MegoldasInputDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\MegoldasInputDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\MegoldasInputDto.cs",
@@ -500,12 +491,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\MegoldasInputDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:30:20.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:30:20.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Mapping\\MappingProfile.cs",
@@ -513,12 +503,11 @@
               "RelativeToolTip": "ZH-tool\\Mapping\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T20:03:44.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T20:03:44.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "FeladatService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\FeladatService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\FeladatService.cs",
@@ -526,12 +515,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\FeladatService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowCoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:39:20.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T15:39:20.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "IFeladatRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\IFeladatRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\IFeladatRepository.cs",
@@ -539,12 +527,11 @@
               "RelativeToolTip": "ZH-tool\\Repository\\IFeladatRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T18:05:56.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T18:05:56.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "GeminiService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\GeminiService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\GeminiService.cs",
@@ -552,12 +539,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\GeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T17:49:25.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T17:49:25.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "IFeladatService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\IFeladatService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\IFeladatService.cs",
@@ -565,12 +551,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\IFeladatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T15:38:18.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T15:38:18.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IGeminiService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\IGeminiService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\IGeminiService.cs",
@@ -578,12 +563,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\IGeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T17:49:53.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T17:49:53.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "HallgatoService.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Services\\HallgatoService.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Services\\HallgatoService.cs",
@@ -591,12 +575,11 @@
               "RelativeToolTip": "ZH-tool\\Services\\HallgatoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:50:24.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:50:24.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Data\\ApplicationDbContext.cs",
@@ -604,12 +587,11 @@
               "RelativeToolTip": "ZH-tool\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:32:46.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:32:46.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "CreateZhDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\CreateZhDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\CreateZhDto.cs",
@@ -617,12 +599,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\CreateZhDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T19:58:52.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T19:58:52.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "GeneraltZhResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\GeneraltZhResponseDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\GeneraltZhResponseDto.cs",
@@ -630,12 +611,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\GeneraltZhResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T21:24:17.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T21:24:17.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Zh.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Models\\Zh.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Models\\Zh.cs",
@@ -643,12 +623,11 @@
               "RelativeToolTip": "ZH-tool\\Models\\Zh.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:31:23.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:31:23.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "HallgatoDto.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\DTOs\\HallgatoDto.cs",
               "RelativeDocumentMoniker": "ZH-tool\\DTOs\\HallgatoDto.cs",
@@ -656,12 +635,11 @@
               "RelativeToolTip": "ZH-tool\\DTOs\\HallgatoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T23:25:31.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T23:25:31.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "HallgatoController.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Controllers\\HallgatoController.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Controllers\\HallgatoController.cs",
@@ -669,12 +647,11 @@
               "RelativeToolTip": "ZH-tool\\Controllers\\HallgatoController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAnwCoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T00:00:07.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T00:00:07.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "ZhRepository.cs",
               "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\Repository\\ZhRepository.cs",
               "RelativeDocumentMoniker": "ZH-tool\\Repository\\ZhRepository.cs",
@@ -682,21 +659,7 @@
               "RelativeToolTip": "ZH-tool\\Repository\\ZhRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T17:37:54.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\appsettings.json",
-              "RelativeDocumentMoniker": "ZH-tool\\appsettings.json",
-              "ToolTip": "C:\\Users\\abony\\Desktop\\ZH-tool\\ZH-tool\\appsettings.json",
-              "RelativeToolTip": "ZH-tool\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-18T18:11:36.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T17:37:54.929Z"
             },
             {
               "$type": "Document",
