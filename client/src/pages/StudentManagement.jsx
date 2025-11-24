@@ -22,19 +22,19 @@ const StudentManagement = () => {
         setMessage(null);
         try {
             await apiClient.post(ENDPOINTS.STUDENT.LOGIN, formData); // Using LOGIN endpoint as it's the same as Create/Register
-            setMessage({ type: 'success', text: 'Student registered successfully!' });
+            setMessage({ type: 'success', text: 'Hallgató sikeresen regisztrálva!' });
             setFormData({ Neptunkod: '', Nev: '' });
         } catch (error) {
             console.error('Failed to register student:', error);
-            setMessage({ type: 'error', text: 'Failed to register student. Neptun code might already exist.' });
+            setMessage({ type: 'error', text: 'Nem sikerült a hallgató regisztrálása. A Neptun kód talán már létezik.' });
         }
     };
 
     return (
         <div className="page student-management-page">
-            <h2>Student Management</h2>
+            <h2>Hallgatók Kezelése</h2>
             <div className="form-card">
-                <h3>Register New Student</h3>
+                <h3>Új Hallgató Regisztrálása</h3>
                 {message && (
                     <div className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-error'}`}>
                         {message.text}
@@ -42,7 +42,7 @@ const StudentManagement = () => {
                 )}
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label>Neptun Code</label>
+                        <label>Neptun Kód</label>
                         <input
                             name="Neptunkod"
                             value={formData.Neptunkod}
@@ -50,20 +50,20 @@ const StudentManagement = () => {
                             required
                             minLength="6"
                             maxLength="6"
-                            placeholder="e.g., ABC123"
+                            placeholder="pl. ABC123"
                         />
                     </div>
                     <div className="form-group">
-                        <label>Name</label>
+                        <label>Név</label>
                         <input
                             name="Nev"
                             value={formData.Nev}
                             onChange={handleChange}
                             required
-                            placeholder="Student Name"
+                            placeholder="Hallgató Neve"
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">Register Student</button>
+                    <button type="submit" className="btn btn-primary">Hallgató Regisztrálása</button>
                 </form>
             </div>
         </div>

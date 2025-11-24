@@ -141,7 +141,7 @@ namespace ZH_tool.Controllers
         /// Generál egy feladatsort egy adott ZH paraméterei alapján (Gemini hívás).
         /// </summary>
         /// <param name="parentZhId">Annak a ZH-nak az azonosítója, amely alapján generálni kell.</param>
-        [HttpPost("{parentZhId:int}/generate")] // Itt kapjuk meg az ID-t
+        [HttpPost("{parentZhId:int}/generalas")] // Itt kapjuk meg az ID-t
         [ProducesResponseType(typeof(GeneraltZhResponseDto), 201)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<GeneraltZhResponseDto>> GenerateZh(int parentZhId)
@@ -162,7 +162,7 @@ namespace ZH_tool.Controllers
         /// <summary>
         /// Lekérdezi az összes generált ZH-t.
         /// </summary>
-        [HttpGet("generated")]
+        [HttpGet("generalt")]
         [ProducesResponseType(typeof(IEnumerable<GeneraltZhResponseDto>), 200)]
         public async Task<ActionResult<IEnumerable<GeneraltZhResponseDto>>> GetAllGeneratedZhk()
         {
@@ -174,7 +174,7 @@ namespace ZH_tool.Controllers
         /// </summary>
         /// <param name="id">A generált ZH azonosítója.</param>
         /// <returns>A generált ZH adatait tartalmazó objektum, benne a generált JSON-nal.</returns>
-        [HttpGet("generated/{id:int}")]
+        [HttpGet("generalt/{id:int}")]
         [ProducesResponseType(typeof(GeneraltZhResponseDto), 200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<GeneraltZhResponseDto>> GetGeneratedZh(int id)
@@ -195,7 +195,7 @@ namespace ZH_tool.Controllers
         /// <summary>
         /// Töröl egy generált ZH-t azonosító alapján.
         /// </summary>
-        [HttpDelete("generated/{id:int}")]
+        [HttpDelete("generalt/{id:int}")]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> DeleteGeneratedZh(int id)

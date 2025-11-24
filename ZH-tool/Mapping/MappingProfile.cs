@@ -26,7 +26,9 @@ namespace ZH_tool.Mapping
             CreateMap<MegoldasInputDto, Megoldas>();
             CreateMap<Megoldas, MegoldasResponseDto>();
 
-            CreateMap<Ertekeles, ErtekelesResponseDto>().ReverseMap();
+            CreateMap<Ertekeles, ErtekelesResponseDto>()
+                .ForMember(dest => dest.HallgatoNeptunkod, opt => opt.MapFrom(src => src.Megoldas != null ? src.Megoldas.HallgatoNeptunkod : string.Empty))
+                .ReverseMap();
             CreateMap<Feladat, FeladatDto>().ReverseMap();
         }
     }

@@ -44,7 +44,9 @@ namespace ZH_tool.Repository
         /// </summary>
         public async Task<Megoldas?> GetByIdAsync(int id)
         {
-            return await _context.Megoldasok.FindAsync(id);
+            return await _context.Megoldasok
+                .Include(m => m.Ertekeles)
+                .FirstOrDefaultAsync(m => m.Id == id);
         }
         /// <summary>
         /// Megoldás adatainak frissítése.

@@ -25,25 +25,25 @@ const BaseExamsList = () => {
     const handleGenerate = async (examId) => {
         try {
             await apiClient.post(ENDPOINTS.EXAM.GENERATE(examId));
-            alert('New exam instance generated successfully!');
+            alert('Új ZH példány sikeresen generálva!');
         } catch (error) {
             console.error('Failed to generate exam:', error);
-            alert('Failed to generate exam.');
+            alert('Nem sikerült a ZH generálása.');
         }
     };
 
-    if (loading) return <div className="page">Loading...</div>;
+    if (loading) return <div className="page">Betöltés...</div>;
 
     return (
         <div className="page base-exams-page">
-            <h2>Base Exams (Templates)</h2>
+            <h2>Alap ZH-k (Sablonok)</h2>
             <div className="table-container">
                 <table className="data-table">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Actions</th>
+                            <th>Azonosító</th>
+                            <th>Név</th>
+                            <th>Műveletek</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,14 +53,14 @@ const BaseExamsList = () => {
                                 <td>{exam.nev}</td>
                                 <td>
                                     <div style={{ display: 'flex', gap: '0.5rem' }}>
-                                        <Link to={`/base-exams/${exam.id}`} className="btn btn-secondary btn-sm">
-                                            View Details
+                                        <Link to={`/alap-zhk/${exam.id}`} className="btn btn-secondary btn-sm">
+                                            Részletek
                                         </Link>
                                         <button
                                             className="btn btn-primary btn-sm"
                                             onClick={() => handleGenerate(exam.id)}
                                         >
-                                            Generate Instance
+                                            Példány Generálása
                                         </button>
                                     </div>
                                 </td>
@@ -68,7 +68,7 @@ const BaseExamsList = () => {
                         ))}
                     </tbody>
                 </table>
-                {exams.length === 0 && <p className="text-center mt-4">No base exams found.</p>}
+                {exams.length === 0 && <p className="text-center mt-4">Nincsenek alap ZH-k.</p>}
             </div>
         </div>
     );

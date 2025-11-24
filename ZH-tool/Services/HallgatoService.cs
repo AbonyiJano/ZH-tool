@@ -29,6 +29,11 @@ namespace ZH_tool.Services
             return await _hallgatoRepository.AddAsync(hallgato);
         }
 
+        public async Task<IEnumerable<Hallgato>> GetAllHallgatoAsync()
+        {
+            return await _hallgatoRepository.GetAllAsync();
+        }
+
 
     }
 }

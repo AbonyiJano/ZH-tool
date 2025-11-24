@@ -8,5 +8,6 @@
         public int? OsszPontszam { get; set; }
         public string LLMVisszajelzes { get; set; } = string.Empty;
         public DateTime ErtekelesDatuma { get; set; }
+        public string HallgatoNeptunkod { get; set; } = string.Empty;
     }
 }

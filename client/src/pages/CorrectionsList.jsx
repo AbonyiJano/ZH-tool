@@ -23,22 +23,22 @@ const CorrectionsList = () => {
         fetchCorrections();
     }, []);
 
-    if (loading) return <div className="page">Loading...</div>;
+    if (loading) return <div className="page">Betöltés...</div>;
 
     return (
         <div className="page corrections-page">
-            <h2>Corrections</h2>
+            <h2>Javítások</h2>
             <div className="table-container">
                 <table className="data-table">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Solution ID</th>
-                            <th>Score</th>
-                            <th>Total Points</th>
-                            <th>Feedback</th>
-                            <th>Date</th>
-                            <th>Actions</th>
+                            <th>Azonosító</th>
+                            <th>Megoldás Azonosító</th>
+                            <th>Pontszám</th>
+                            <th>Összpontszám</th>
+                            <th>Visszajelzés</th>
+                            <th>Dátum</th>
+                            <th>Műveletek</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,7 +58,7 @@ const CorrectionsList = () => {
                                                     onClick={() => setSelectedFeedback(correction.llmVisszajelzes)}
                                                     style={{ marginLeft: '0.5rem', color: 'var(--primary-color)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
                                                 >
-                                                    Read More
+                                                    Tovább
                                                 </button>
                                             </>
                                         ) : (
@@ -68,22 +68,22 @@ const CorrectionsList = () => {
                                 </td>
                                 <td>{new Date(correction.ertekelesDatuma).toLocaleString()}</td>
                                 <td>
-                                    <Link to={`/solutions/${correction.megoldasId}`} className="btn btn-secondary btn-sm">
-                                        View Solution
+                                    <Link to={`/megoldasok/${correction.megoldasId}`} className="btn btn-secondary btn-sm">
+                                        Megoldás Megtekintése
                                     </Link>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
-                {corrections.length === 0 && <p className="text-center mt-4">No corrections found.</p>}
+                {corrections.length === 0 && <p className="text-center mt-4">Nincsenek javítások.</p>}
             </div>
 
             {selectedFeedback && (
                 <div className="modal-overlay" onClick={() => setSelectedFeedback(null)}>
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
                         <button className="modal-close" onClick={() => setSelectedFeedback(null)}>&times;</button>
-                        <h3>Feedback Details</h3>
+                        <h3>Visszajelzés Részletei</h3>
                         <div className="modal-body">
                             {selectedFeedback}
                         </div>

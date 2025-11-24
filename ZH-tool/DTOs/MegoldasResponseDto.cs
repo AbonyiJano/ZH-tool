@@ -7,5 +7,6 @@
         public int GeneraltZhId { get; set; }
         public string BekuldottMegoldas { get; set; } = string.Empty;
         public DateTime BekuldesDatuma { get; set; }
+        public ErtekelesResponseDto? Ertekeles { get; set; }
     }
 }

@@ -27,37 +27,37 @@ const CreateExam = () => {
         e.preventDefault();
         try {
             await apiClient.post(ENDPOINTS.EXAM.CREATE, formData);
-            alert('Exam created successfully!');
+            alert('ZH sikeresen létrehozva!');
             navigate('/');
         } catch (error) {
             console.error('Failed to create exam:', error);
-            alert('Failed to create exam. Please check your inputs.');
+            alert('Nem sikerült létrehozni a ZH-t. Kérjük, ellenőrizze a bemeneteket.');
         }
     };
 
     return (
         <div className="page create-exam-page">
-            <h2>Create New Exam</h2>
+            <h2>Új ZH Sablon Létrehozása</h2>
             <form onSubmit={handleSubmit} className="form-card">
                 <div className="form-group">
-                    <label>Exam Name</label>
+                    <label>ZH Neve</label>
                     <input name="Nev" value={formData.Nev} onChange={handleChange} required />
                 </div>
                 <div className="form-group">
-                    <label>Sample ZH (Optional)</label>
+                    <label>Minta ZH (Opcionális)</label>
                     <textarea name="MintaZh" value={formData.MintaZh} onChange={handleChange} rows="3" />
                 </div>
                 <div className="form-group">
-                    <label>Topic / Theme</label>
+                    <label>Tematika</label>
                     <input name="Tematika" value={formData.Tematika} onChange={handleChange} />
                 </div>
                 <div className="form-group">
-                    <label>Topic Description</label>
+                    <label>Témakör Leírása</label>
                     <textarea name="TemakorLeiras" value={formData.TemakorLeiras} onChange={handleChange} rows="3" />
                 </div>
                 <div className="form-row">
                     <div className="form-group">
-                        <label>Number of Tasks</label>
+                        <label>Feladatok Száma</label>
                         <input
                             type="number"
                             name="FeladatokSzama"
@@ -69,20 +69,20 @@ const CreateExam = () => {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Programming Language</label>
+                        <label>Programozási Nyelv</label>
                         <input name="ProgramozasiNyelv" value={formData.ProgramozasiNyelv} onChange={handleChange} />
                     </div>
                     <div className="form-group">
-                        <label>Difficulty</label>
+                        <label>Nehézség</label>
                         <select name="Nehezseg" value={formData.Nehezseg} onChange={handleChange}>
-                            <option value="">Select Difficulty</option>
-                            <option value="Könnyű">Easy</option>
-                            <option value="Közepes">Medium</option>
-                            <option value="Nehéz">Hard</option>
+                            <option value="">Válasszon Nehézséget</option>
+                            <option value="Könnyű">Könnyű</option>
+                            <option value="Közepes">Közepes</option>
+                            <option value="Nehéz">Nehéz</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Create Exam</button>
+                <button type="submit" className="btn btn-primary">ZH Létrehozása</button>
             </form>
         </div>
     );

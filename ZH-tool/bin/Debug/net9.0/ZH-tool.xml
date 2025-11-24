@@ -48,6 +48,12 @@
             <param name="neptunkod">A hallgató egyedi Neptunkódja.</param>
             <returns>A hallgató adatait tartalmazó DTO.</returns>
         </member>
+        <member name="M:ZH_tool.Controllers.HallgatoController.GetAllHallgato">
+            <summary>
+            Az összes hallgató lekérdezése.
+            </summary>
+            <returns>A hallgatók listája.</returns>
+        </member>
         <member name="M:ZH_tool.Controllers.MegoldasController.SubmitMegoldas(ZH_tool.DTOs.MegoldasInputDto)">
             <summary>
             Egy hallgató beküldi egy generált ZH megoldását.
@@ -61,6 +67,12 @@
             </summary>
             <param name="id">A megoldás egyedi azonosítója.</param>
             <returns>A megoldás adatait tartalmazó DTO.</returns>
+        </member>
+        <member name="M:ZH_tool.Controllers.MegoldasController.GetAllMegoldas">
+            <summary>
+            Az összes megoldás lekérdezése.
+            </summary>
+            <returns>A megoldások listája.</returns>
         </member>
         <member name="M:ZH_tool.Controllers.ZhController.GetAllZhk">
             <summary>

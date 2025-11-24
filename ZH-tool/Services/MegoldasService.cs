@@ -60,6 +60,11 @@ namespace ZH_tool.Services
             return await _megoldasRepository.GetByIdAsync(id);
         }
 
+        public async Task<IEnumerable<Megoldas>> GetAllMegoldasAsync()
+        {
+            return await _megoldasRepository.GetAllAsync();
+        }
+
         /// <summary>
         /// LLM segítségével pontozza a beküldött megoldást, és menti az értékelést.
         /// </summary>

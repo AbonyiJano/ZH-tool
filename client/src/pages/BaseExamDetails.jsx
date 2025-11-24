@@ -27,59 +27,59 @@ const BaseExamDetails = () => {
     const handleGenerate = async () => {
         try {
             await apiClient.post(ENDPOINTS.EXAM.GENERATE(id));
-            alert('New exam instance generated successfully!');
-            navigate('/generated-exams');
+            alert('Új ZH példány sikeresen generálva!');
+            navigate('/generalt-zhk');
         } catch (error) {
             console.error('Failed to generate exam:', error);
-            alert('Failed to generate exam.');
+            alert('Nem sikerült a ZH generálása.');
         }
     };
 
-    if (loading) return <div className="page">Loading...</div>;
-    if (!exam) return <div className="page">Exam not found.</div>;
+    if (loading) return <div className="page">Betöltés...</div>;
+    if (!exam) return <div className="page">A ZH nem található.</div>;
 
     return (
         <div className="page base-exam-details-page">
             <div className="header-actions">
-                <h2>Base Exam Details #{exam.id}</h2>
-                <Link to="/base-exams" className="btn btn-secondary">Back to List</Link>
+                <h2>Alap ZH Részletek #{exam.id}</h2>
+                <Link to="/alap-zhk" className="btn btn-secondary">Vissza a listához</Link>
             </div>
 
             <div className="card">
                 <div className="form-group">
-                    <label>Exam Name</label>
+                    <label>ZH Neve</label>
                     <div className="static-value">{exam.nev}</div>
                 </div>
                 <div className="form-group">
-                    <label>Sample Exam ID</label>
+                    <label>Minta ZH Azonosító</label>
                     <div className="static-value">{exam.mintaZh}</div>
                 </div>
                 <div className="form-group">
-                    <label>Topic</label>
+                    <label>Tematika</label>
                     <div className="static-value">{exam.tematika}</div>
                 </div>
                 <div className="form-group">
-                    <label>Description</label>
+                    <label>Leírás</label>
                     <div className="static-value">{exam.temakorLeiras}</div>
                 </div>
                 <div className="form-row">
                     <div className="form-group">
-                        <label>Task Count</label>
+                        <label>Feladatok Száma</label>
                         <div className="static-value">{exam.feladatokSzama}</div>
                     </div>
                     <div className="form-group">
-                        <label>Language</label>
+                        <label>Nyelv</label>
                         <div className="static-value">{exam.programozasiNyelv}</div>
                     </div>
                     <div className="form-group">
-                        <label>Difficulty</label>
+                        <label>Nehézség</label>
                         <div className="static-value">{exam.nehezseg}</div>
                     </div>
                 </div>
 
                 <div className="mt-4">
                     <button onClick={handleGenerate} className="btn btn-primary">
-                        Generate New Instance
+                        Új Példány Generálása
                     </button>
                 </div>
             </div>

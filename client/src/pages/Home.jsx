@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="page home-page">
-            <h1>Teacher Dashboard</h1>
-            <p>Welcome to the ZH-Tool Teacher Interface.</p>
+            <h1>Tanári Vezérlőpult</h1>
+            <p>Üdvözöljük a ZH-Tool Tanári Felületén.</p>
             <div className="dashboard-grid">
-                <Link to="/create-exam" className="card dashboard-card">
-                    <h3>Create Exam</h3>
-                    <p>Design new exams and tasks.</p>
+                <Link to="/uj-zh" className="card dashboard-card">
+                    <h3>Új ZH Létrehozása</h3>
+                    <p>Új ZH-k és feladatok tervezése.</p>
                 </Link>
-                <Link to="/students" className="card dashboard-card">
-                    <h3>Manage Students</h3>
-                    <p>Register and view students.</p>
+                <Link to="/hallgatok" className="card dashboard-card">
+                    <h3>Hallgatók Kezelése</h3>
+                    <p>Hallgatók regisztrálása és megtekintése.</p>
                 </Link>
-                <Link to="/correction" className="card dashboard-card">
-                    <h3>Correction</h3>
-                    <p>Submit and correct student solutions.</p>
+                <Link to="/javitas" className="card dashboard-card">
+                    <h3>Javítás</h3>
+                    <p>Hallgatói megoldások beküldése és javítása.</p>
                 </Link>
             </div>
         </div>

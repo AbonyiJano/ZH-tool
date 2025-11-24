@@ -24,5 +24,7 @@ namespace ZH_tool.Models
         public string BekuldottMegoldas { get; set; } = string.Empty;
 
         public DateTime BekuldesDatuma { get; set; } = DateTime.UtcNow;
+
+        public Ertekeles? Ertekeles { get; set; }
     }
 }

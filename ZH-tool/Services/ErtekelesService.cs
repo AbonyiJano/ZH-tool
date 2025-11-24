@@ -20,5 +20,10 @@ namespace ZH_tool.Services
         {
             return await _ertekelesRepository.GetAllAsync();
         }
+
+        public async Task<Ertekeles?> UpdateErtekelesAsync(Ertekeles ertekeles)
+        {
+            return await _ertekelesRepository.UpdateAsync(ertekeles);
+        }
     }
 }

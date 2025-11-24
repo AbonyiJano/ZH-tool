@@ -131,7 +131,7 @@ namespace ZH_tool.Controllers
         /// <summary>
         /// Feladatok lekérése Zh alapján.
         /// </summary>
-        [HttpGet("bygeneraltzh/{generaltZhId:int}")]
+        [HttpGet("generaltzh/{generaltZhId:int}")]
         [ProducesResponseType(typeof(IEnumerable<FeladatDto>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<FeladatDto>>> GetFeladatokByGeneraltZhId(int generaltZhId)
         {

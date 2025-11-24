@@ -25,7 +25,7 @@ namespace ZH_tool.Controllers
         /// </summary>
         /// <param name="megoldasDto">A beküldött megoldás adatai (Neptunkód, GeneraltZhId, BekuldottMegoldas).</param>
         /// <returns>A mentett megoldás adatait tartalmazó DTO.</returns>
-        [HttpPost("submit-megoldas")]
+        [HttpPost("bekuldes")]
         [ProducesResponseType(typeof(MegoldasResponseDto), (int)HttpStatusCode.Created)] // 201
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)] // 400
         [ProducesResponseType((int)HttpStatusCode.NotFound)] // 404 (Ha a ZH vagy a Hallgató nem létezik)
@@ -63,7 +63,7 @@ namespace ZH_tool.Controllers
         /// </summary>
         /// <param name="id">A megoldás egyedi azonosítója.</param>
         /// <returns>A megoldás adatait tartalmazó DTO.</returns>
-        [HttpGet("megoldas/{id:int}")]
+        [HttpGet("{id:int}")]
         [ProducesResponseType(typeof(MegoldasResponseDto), (int)HttpStatusCode.OK)] // 200
         [ProducesResponseType((int)HttpStatusCode.NotFound)] // 404
         public async Task<ActionResult<MegoldasResponseDto>> GetMegoldasById(int id)
@@ -77,6 +77,18 @@ namespace ZH_tool.Controllers
             }
 
             return Ok(_mapper.Map<MegoldasResponseDto>(megoldas));
+        }
+
+        /// <summary>
+        /// Az összes megoldás lekérdezése.
+        /// </summary>
+        /// <returns>A megoldások listája.</returns>
+        [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<MegoldasResponseDto>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IEnumerable<MegoldasResponseDto>>> GetAllMegoldas()
+        {
+            var megoldasok = await _megoldasService.GetAllMegoldasAsync();
+            return Ok(_mapper.Map<IEnumerable<MegoldasResponseDto>>(megoldasok));
         }
     }
 }

@@ -41,22 +41,22 @@ const GeneratedExamsList = () => {
             // Refresh list
             const response = await apiClient.get(ENDPOINTS.EXAM.LIST_GENERATED);
             setGeneratedExams(response.data);
-            alert('New exam instance generated successfully!');
+            alert('Új ZH példány sikeresen generálva!');
         } catch (error) {
             console.error('Failed to generate exam:', error);
-            alert('Failed to generate exam.');
+            alert('Nem sikerült a ZH generálása.');
         }
     };
 
-    if (loading) return <div className="page">Loading...</div>;
+    if (loading) return <div className="page">Betöltés...</div>;
 
     return (
         <div className="page generated-exams-page">
             <div className="header-actions">
-                <h2>Generated Exams</h2>
+                <h2>Generált ZH-k</h2>
                 <div className="generate-action">
                     <select id="baseExamSelect" className="select-input">
-                        <option value="">Select Base Exam to Generate</option>
+                        <option value="">Válasszon Alap ZH-t a generáláshoz</option>
                         {Object.values(baseExams).map(exam => (
                             <option key={exam.id} value={exam.id}>{exam.nev}</option>
                         ))}
@@ -65,7 +65,7 @@ const GeneratedExamsList = () => {
                         className="btn btn-primary"
                         onClick={() => handleGenerate(document.getElementById('baseExamSelect').value)}
                     >
-                        Generate New Instance
+                        Új Példány Generálása
                     </button>
                 </div>
             </div>
@@ -74,36 +74,36 @@ const GeneratedExamsList = () => {
                 <table className="data-table">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Base Exam Name</th>
-                            <th>Generated At</th>
-                            <th>Actions</th>
+                            <th>Azonosító</th>
+                            <th>Alap ZH Neve</th>
+                            <th>Generálás Ideje</th>
+                            <th>Műveletek</th>
                         </tr>
                     </thead>
                     <tbody>
                         {generatedExams.map((exam) => (
                             <tr key={exam.id}>
                                 <td>{exam.id}</td>
-                                <td>{baseExams[exam.parentZhId]?.nev || 'Unknown'}</td>
+                                <td>{baseExams[exam.parentZhId]?.nev || 'Ismeretlen'}</td>
                                 <td>{new Date(exam.generationTime).toLocaleString()}</td>
                                 <td>
-                                    <Link to={`/generated-exams/${exam.id}/tasks`} className="btn btn-secondary btn-sm">
-                                        View Tasks
+                                    <Link to={`/generalt-zhk/${exam.id}/feladatok`} className="btn btn-secondary btn-sm">
+                                        Feladatok Megtekintése
                                     </Link>
                                     <Link
-                                        to="/correction"
+                                        to="/javitas"
                                         state={{ generaltZhId: exam.id }}
                                         className="btn btn-primary btn-sm"
                                         style={{ marginLeft: '0.5rem' }}
                                     >
-                                        Submit Solution
+                                        Megoldás Beküldése
                                     </Link>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
-                {generatedExams.length === 0 && <p className="text-center mt-4">No generated exams found.</p>}
+                {generatedExams.length === 0 && <p className="text-center mt-4">Nincsenek generált ZH-k.</p>}
             </div>
         </div>
     );

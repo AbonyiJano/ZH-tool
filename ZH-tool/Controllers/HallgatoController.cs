@@ -74,5 +74,17 @@ namespace ZH_tool.Controllers
 
             return Ok(_mapper.Map<HallgatoDto>(hallgato));
         }
+
+        /// <summary>
+        /// Az összes hallgató lekérdezése.
+        /// </summary>
+        /// <returns>A hallgatók listája.</returns>
+        [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<HallgatoDto>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IEnumerable<HallgatoDto>>> GetAllHallgato()
+        {
+            var hallgatok = await _hallgatoService.GetAllHallgatoAsync();
+            return Ok(_mapper.Map<IEnumerable<HallgatoDto>>(hallgatok));
+        }
     }
 }

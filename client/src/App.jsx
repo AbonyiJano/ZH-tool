@@ -9,7 +9,7 @@ import StudentManagement from './pages/StudentManagement';
 import Correction from './pages/Correction';
 import GeneratedExamsList from './pages/GeneratedExamsList';
 import ExamTasks from './pages/ExamTasks';
-import CorrectionsList from './pages/CorrectionsList';
+import SolutionsList from './pages/SolutionsList';
 import SolutionDetails from './pages/SolutionDetails';
 import './App.css';
 
@@ -21,15 +21,15 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/create-exam" element={<CreateExam />} />
-            <Route path="/base-exams" element={<BaseExamsList />} />
-            <Route path="/base-exams/:id" element={<BaseExamDetails />} />
-            <Route path="/students" element={<StudentManagement />} />
-            <Route path="/correction" element={<Correction />} />
-            <Route path="/generated-exams" element={<GeneratedExamsList />} />
-            <Route path="/generated-exams/:id/tasks" element={<ExamTasks />} />
-            <Route path="/corrections" element={<CorrectionsList />} />
-            <Route path="/solutions/:id" element={<SolutionDetails />} />
+            <Route path="/uj-zh" element={<CreateExam />} />
+            <Route path="/alap-zhk" element={<BaseExamsList />} />
+            <Route path="/alap-zhk/:id" element={<BaseExamDetails />} />
+            <Route path="/hallgatok" element={<StudentManagement />} />
+            <Route path="/javitas" element={<Correction />} />
+            <Route path="/generalt-zhk" element={<GeneratedExamsList />} />
+            <Route path="/generalt-zhk/:id/feladatok" element={<ExamTasks />} />
+            <Route path="/javitasok" element={<SolutionsList />} />
+            <Route path="/megoldasok/:id" element={<SolutionDetails />} />
           </Routes>
         </main>
       </div>

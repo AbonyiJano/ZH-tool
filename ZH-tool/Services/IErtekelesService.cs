@@ -9,5 +9,6 @@ namespace ZH_tool.Services
         // ÚJ: Értékelés lekérdezése
         Task<Ertekeles?> GetErtekelesByIdAsync(int id);
         Task<IEnumerable<Ertekeles>> GetAllErtekelesAsync();
+        Task<Ertekeles?> UpdateErtekelesAsync(Ertekeles ertekeles);
     }
 }

@@ -6,6 +6,7 @@ namespace ZH_tool.Services
     {
         Task<Megoldas?> SubmitMegoldasAsync(Megoldas megoldas);
         Task<Megoldas?> GetMegoldasByIdAsync(int id);
+        Task<IEnumerable<Megoldas>> GetAllMegoldasAsync();
 
         Task<Ertekeles?> GradeMegoldasAsync(Megoldas megoldas);
     }
